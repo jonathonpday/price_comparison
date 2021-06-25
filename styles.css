@@ -3,3 +3,43 @@
 *::after {
   box-sizing: border-box;
 }
+
+:root {
+  --accent-color: #641bff;
+  --heading-font-family: "Poppins", san-serif;
+  --body-font-family: "Lato", san-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f8f9fb;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--body-font-family);
+}
+
+.price-comparison {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  margin: 1rem;
+}
+
+.price-column {
+  background-color: white;
+  box-shadow: 0 7px 30px rgba(52, 31, 97, 0.1);
+  padding: 2rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 275px;
+  border-radius: 8px;
+}
+
+.price-column.popular {
+  background-color: var(--accent-color);
+  color: white;
+}
